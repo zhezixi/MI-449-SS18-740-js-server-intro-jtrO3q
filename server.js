@@ -7,9 +7,9 @@ var server = http.createServer(function (request, response) {
     response.end('<h1>Welcome!</h1>')
   } else if (request.url === '/random-joke') {
       var randomNumber = Math.floor(Math.random() * 2) + 1
-      if (randomNumber = 1) {
+      if (randomNumber === 1) {
         response.write('<p>Knock, knock!<br>Who’s there?<br>Opportunity!<br>That is impossible. Opportunity doesn’t come knocking twice!</p>')
-      } else if (randomNumber = 2) {
+      } else if (randomNumber === 2) {
         response.write('<p>Knock knock.<br>Who’s there?<br>An extraterrestrial.<br>Extraterrestrial who?<br>What – how many extra-terrestrials do you know?</p>')
       } else {
         response.write('<p>Knock knock.<br>Who’s there?<br>Beats.<br>Beats who?<br>Beats me.</p>')
